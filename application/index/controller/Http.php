@@ -38,7 +38,7 @@ class Http
     protected function helloWorld($data)
     {
         echo "调用了sayHelloWorld的func\n";
-        $msg = ['task' => 'sayHelloWorld', 'data' => ['msg' => 'hello, xiaodi']];
+        $msg = ['task' => 'sayHelloWorld', 'data' => ['msg' => 'hello, xiaodi' . $data['job_id']]];
         $msg = json_encode($msg);
 
         $TaskServer = new AsyncTcpConnection('Text://127.0.0.1:55555');
@@ -50,8 +50,7 @@ class Http
         };
 
         $TaskServer->onMessage = function ($connection, $http_buffer) {
-            var_dump($http_buffer);
-            // $connection->close();
+            $connection->close();
         };
 
         $TaskServer->onClose = function ($connection) {

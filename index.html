@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    1234
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <style>
+    body {
+      background: #f2f2f2;
+      display: flex;
+      height: 100vh;
+    }
+
+    #app {
+      background: #fff;
+      padding: 32px 20px;
+      width: 500px;
+      margin: auto;
+    }
+
+    .el-header {
+      text-align: center;
+      font-size:20px;
+      height: auto!important;
+      margin-bottom:20px;
+    }
+
+    .el-footer {
+      text-align: right;
+      font-size: 14px;
+      padding:0;
+      height: auto!important;
+    }
+
+    .result {
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .result-main {
+      margin: auto;
+      background: #f2f2f2;
+      margin-top: 40px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <el-container>
+      <el-header>Workerman 异步投递任务</el-header>
+      <el-main>
+        <el-form :model="task" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
+          <el-form-item label="Task" prop="name">
+            <el-input v-model="task.name" readonly></el-input>
+          </el-form-item>
+
+          <el-form-item label="数量" prop="name">
+            <el-input v-model="task.num"></el-input>
+          </el-form-item>
+
+          <el-form-item>
+            <el-button type="primary" @click="submitForm('ruleForm')">立即创建</el-button>
+          </el-form-item>
+        </el-form>
+
+        <div class="result-main">
+          <p>进度</p>
+          <ul class='result'>
+            <li v-for="item in result">
+              task:{{ item.task }} 完成 {{ item.data.msg }}
+            </li>
+          </ul>
+        </div>
+
+      </el-main>
+      <el-footer>Power By Xiaodi</el-footer>
+    </el-container>
+  </div>
+</body>
+
+<script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.18.0/axios.js"></script>
+<script src="https://cdn.bootcss.com/socket.io/2.1.1/socket.io.js"></script>
+
+<script>
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        connected: false,
+        socket: '',
+        result: [],
+        task: {
+          name: 'helloWorld',
+          num: 100
+        },
+        rules: {
+          num: [
+            { required: true, message: '必须', trigger: 'blur' }
+          ]
+        }
+      }
+    },
+    mounted() {
+      this.fetch()
+    },
+    methods: {
+      fetch() {
+        this.socket = io('http://0.0.0.0:2120')
+        this.socket.on('connect', () => {
+          this.$message.success('链接服务成功!')
+        })
+        this.socket.on('sayHello', (res) => {
+          this.result.unshift(res)
+        })
+      },
+      
+      submitForm(formName) {
+        this.$refs[formName].validate((valid) => {
+          if (valid) {
+            for (var i = 0; i < this.task.num; i++) {
+              axios.get('http://0.0.0.0:4237?task=' + this.task.name + '&job_id=' + i)
+            }
+          } else {
+            console.log('error submit!!');
+            return false;
+          }
+        });
+      },
+    }
+  })
+</script>
+
 </html>

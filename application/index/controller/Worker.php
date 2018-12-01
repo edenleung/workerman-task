@@ -3,6 +3,7 @@ namespace app\index\controller;
 
 use think\worker\Server;
 use Workerman\Lib\Timer;
+use Channel\Client;
 
 class Worker extends Server
 {
@@ -18,6 +19,7 @@ class Worker extends Server
     {
         $this->worker = $worker;
         $worker->name = 'TaskWorker';
+        Client::connect('0.0.0.0', 2206);
     }
 
     public function onConnect($connection)
@@ -42,7 +44,10 @@ class Worker extends Server
     {
         list($connection, $params) = $data;
         echo "正在处理task: sayHelloWorld\n";
-        sleep(5);
+        sleep(rand(1, 5));
+        $event_name = 'sayHello';
+        // 广播事件
+        Client::publish($event_name, $params);
         $connection->send('完成');
     }
 }
