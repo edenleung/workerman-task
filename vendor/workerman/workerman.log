@@ -1,0 +1,1336 @@
+2018-11-30 21:30:40 pid:1800 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:31:01 pid:1812 Workerman[http.php] status 
+2018-11-30 21:31:01 pid:1812 Workerman[http.php] not run
+2018-11-30 21:31:06 pid:1813 Workerman[http.php] reload 
+2018-11-30 21:31:06 pid:1813 Workerman[http.php] not run
+2018-11-30 21:31:10 pid:1814 Workerman[http.php] stop 
+2018-11-30 21:31:10 pid:1814 Workerman[http.php] not run
+2018-11-30 21:31:12 pid:1815 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:40:51 pid:4051 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:41:30 pid:4203 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:42:32 pid:4203 Workerman[http.php] stopping ...
+2018-11-30 21:42:32 pid:4203 Workerman[http.php] has been stopped
+2018-11-30 21:42:33 pid:4221 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:42:53 pid:4221 Workerman[http.php] stopping ...
+2018-11-30 21:42:53 pid:4221 Workerman[http.php] has been stopped
+2018-11-30 21:42:54 pid:4228 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:44:33 pid:4228 Workerman[http.php] stopping ...
+2018-11-30 21:44:33 pid:4228 Workerman[http.php] has been stopped
+2018-11-30 21:44:33 pid:4242 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:44:56 pid:4242 Workerman[http.php] stopping ...
+2018-11-30 21:44:56 pid:4242 Workerman[http.php] has been stopped
+2018-11-30 21:44:57 pid:4249 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:47:54 pid:4249 Workerman[http.php] stopping ...
+2018-11-30 21:47:54 pid:4249 Workerman[http.php] has been stopped
+2018-11-30 21:47:55 pid:4290 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:49:43 pid:4290 Workerman[http.php] stopping ...
+2018-11-30 21:49:43 pid:4290 Workerman[http.php] has been stopped
+2018-11-30 21:49:43 pid:4314 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:49:43 pid:4315 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#7 [internal function]: app\index\controller\Http->__construct()
+#8 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#9 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#11 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#13 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#14 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#15 {main}
+2018-11-30 21:49:44 pid:4315 Worker[4315] process terminated
+2018-11-30 21:49:44 pid:4314 worker[publisher:4315] exit with status 64000
+2018-11-30 21:49:44 pid:4316 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:45 pid:4316 Worker[4316] process terminated
+2018-11-30 21:49:46 pid:4314 worker[publisher:4316] exit with status 64000
+2018-11-30 21:49:46 pid:4317 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:47 pid:4317 Worker[4317] process terminated
+2018-11-30 21:49:47 pid:4314 worker[publisher:4317] exit with status 64000
+2018-11-30 21:49:47 pid:4318 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:48 pid:4318 Worker[4318] process terminated
+2018-11-30 21:49:48 pid:4314 worker[publisher:4318] exit with status 64000
+2018-11-30 21:49:48 pid:4319 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:49 pid:4319 Worker[4319] process terminated
+2018-11-30 21:49:49 pid:4314 worker[publisher:4319] exit with status 64000
+2018-11-30 21:49:49 pid:4320 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:50 pid:4320 Worker[4320] process terminated
+2018-11-30 21:49:50 pid:4314 worker[publisher:4320] exit with status 64000
+2018-11-30 21:49:50 pid:4321 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:51 pid:4321 Worker[4321] process terminated
+2018-11-30 21:49:51 pid:4314 worker[publisher:4321] exit with status 64000
+2018-11-30 21:49:51 pid:4322 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:52 pid:4322 Worker[4322] process terminated
+2018-11-30 21:49:52 pid:4314 worker[publisher:4322] exit with status 64000
+2018-11-30 21:49:52 pid:4323 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:53 pid:4323 Worker[4323] process terminated
+2018-11-30 21:49:53 pid:4314 worker[publisher:4323] exit with status 64000
+2018-11-30 21:49:53 pid:4324 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:54 pid:4324 Worker[4324] process terminated
+2018-11-30 21:49:54 pid:4314 worker[publisher:4324] exit with status 64000
+2018-11-30 21:49:54 pid:4326 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:55 pid:4326 Worker[4326] process terminated
+2018-11-30 21:49:55 pid:4314 worker[publisher:4326] exit with status 64000
+2018-11-30 21:49:55 pid:4329 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:56 pid:4329 Worker[4329] process terminated
+2018-11-30 21:49:56 pid:4314 worker[publisher:4329] exit with status 64000
+2018-11-30 21:49:56 pid:4330 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:57 pid:4330 Worker[4330] process terminated
+2018-11-30 21:49:57 pid:4314 worker[publisher:4330] exit with status 64000
+2018-11-30 21:49:57 pid:4332 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:58 pid:4332 Worker[4332] process terminated
+2018-11-30 21:49:58 pid:4314 worker[publisher:4332] exit with status 64000
+2018-11-30 21:49:58 pid:4334 Error: Class 'app\index\controller\AsyncTcpConnection' not found in /Users/halo/work/workerman/application/index/controller/Http.php:20
+Stack trace:
+#0 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Worker))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2306): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#8 /Users/halo/work/workerman/application/index/controller/Http.php(38): Workerman\Worker::runAll()
+#9 [internal function]: app\index\controller\Http->__construct()
+#10 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#15 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#16 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#17 {main}
+2018-11-30 21:49:59 pid:4334 Worker[4334] process terminated
+2018-11-30 21:49:59 pid:4314 Workerman[http.php] stopping ...
+2018-11-30 21:49:59 pid:4314 worker[publisher:4334] exit with status 64000
+2018-11-30 21:49:59 pid:4314 Workerman[http.php] has been stopped
+2018-11-30 21:49:59 pid:4335 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:52:04 pid:4335 Workerman[http.php] stopping ...
+2018-11-30 21:52:04 pid:4335 Workerman[http.php] has been stopped
+2018-11-30 21:52:05 pid:4373 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:52:29 pid:4373 Workerman[http.php] stopping ...
+2018-11-30 21:52:29 pid:4373 Workerman[http.php] has been stopped
+2018-11-30 21:52:30 pid:4384 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:52:42 pid:4388 Workerman[server.php] start in DEBUG mode
+2018-11-30 21:52:44 pid:4384 Workerman[http.php] stopping ...
+2018-11-30 21:52:44 pid:4384 Workerman[http.php] has been stopped
+2018-11-30 21:52:45 pid:4390 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:53:44 pid:4390 Workerman[http.php] stopping ...
+2018-11-30 21:53:44 pid:4390 Workerman[http.php] has been stopped
+2018-11-30 21:53:44 pid:4408 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:54:09 pid:4408 Workerman[http.php] stopping ...
+2018-11-30 21:54:09 pid:4408 Workerman[http.php] has been stopped
+2018-11-30 21:54:18 pid:4424 Workerman[http.php] start in DEBUG mode
+2018-11-30 21:54:30 pid:4389 think\exception\ErrorException: Trying to get property 'type' of non-object in /Users/halo/work/workerman/application/index/controller/Worker.php:53
+Stack trace:
+#0 /Users/halo/work/workerman/application/index/controller/Worker.php(53): think\Error::appError(8, 'Trying to get p...', '/Users/halo/wor...', 53, Array)
+#1 [internal function]: app\index\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), '1234')
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Connection/TcpConnection.php(681): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '1234')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#10 /Users/halo/work/workerman/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#11 [internal function]: think\worker\Server->__construct()
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#13 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('worker', 'controller', false, 'Error')
+#15 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#16 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#17 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#18 /Users/halo/work/workerman/server.php(8): require('/Users/halo/wor...')
+#19 {main}
+2018-11-30 21:54:30 pid:4389 Worker[4389] process terminated
+2018-11-30 21:54:30 pid:4388 worker[none:4389] exit with status 64000
+2018-11-30 21:54:43 pid:4388 Workerman[server.php] stopping ...
+2018-11-30 21:54:43 pid:4388 Workerman[server.php] has been stopped
+2018-11-30 21:56:50 pid:4447 Workerman[server.php] start in DEBUG mode
+2018-11-30 21:56:55 pid:4424 Workerman[http.php] stopping ...
+2018-11-30 21:56:55 pid:4424 Workerman[http.php] has been stopped
+2018-11-30 21:56:55 pid:4449 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:00:22 pid:4449 Workerman[http.php] stopping ...
+2018-11-30 22:00:22 pid:4449 Workerman[http.php] has been stopped
+2018-11-30 22:00:22 pid:4447 Workerman[server.php] stopping ...
+2018-11-30 22:00:22 pid:4447 Workerman[server.php] has been stopped
+2018-11-30 22:00:23 pid:4491 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:00:24 pid:4493 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:01:38 pid:4493 Workerman[http.php] stopping ...
+2018-11-30 22:01:38 pid:4493 Workerman[http.php] has been stopped
+2018-11-30 22:01:39 pid:4491 Workerman[server.php] stopping ...
+2018-11-30 22:01:39 pid:4491 Workerman[server.php] has been stopped
+2018-11-30 22:01:40 pid:4512 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:01:42 pid:4514 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:01:44 pid:4513 Error: Call to a member function send() on null in /Users/halo/work/workerman/application/index/controller/Http.php:71
+Stack trace:
+#0 /Users/halo/work/workerman/application/index/controller/Http.php(55): app\index\controller\Http->sayHello(Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#10 /Users/halo/work/workerman/application/index/controller/Http.php(63): Workerman\Worker::runAll()
+#11 [internal function]: app\index\controller\Http->__construct()
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#13 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#15 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#16 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#17 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#18 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#19 {main}
+2018-11-30 22:01:44 pid:4513 Worker[4513] process terminated
+2018-11-30 22:01:44 pid:4512 worker[publisher:4513] exit with status 64000
+2018-11-30 22:05:40 pid:4512 Workerman[http.php] stopping ...
+2018-11-30 22:05:40 pid:4512 Workerman[http.php] has been stopped
+2018-11-30 22:05:41 pid:4555 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:05:42 pid:4514 Workerman[server.php] stopping ...
+2018-11-30 22:05:42 pid:4514 Workerman[server.php] has been stopped
+2018-11-30 22:05:43 pid:4557 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:05:44 pid:4558 Worker[4558] process terminated
+2018-11-30 22:05:45 pid:4565 Worker[4565] process terminated
+2018-11-30 22:05:46 pid:4572 Worker[4572] process terminated
+2018-11-30 22:05:47 pid:4579 Worker[4579] process terminated
+2018-11-30 22:05:48 pid:4586 Worker[4586] process terminated
+2018-11-30 22:05:49 pid:4593 Worker[4593] process terminated
+2018-11-30 22:05:49 pid:4557 Workerman[server.php] stopping ...
+2018-11-30 22:05:49 pid:4557 Workerman[server.php] has been stopped
+2018-11-30 22:07:16 pid:4611 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:07:18 pid:4555 Workerman[http.php] stopping ...
+2018-11-30 22:07:18 pid:4555 Workerman[http.php] has been stopped
+2018-11-30 22:07:19 pid:4613 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:07:22 pid:4612 Error: Cannot use object of type stdClass as array in /Users/halo/work/workerman/application/index/controller/Worker.php:37
+Stack trace:
+#0 [internal function]: app\index\controller\Worker->onMessage(Object(Workerman\Connection\TcpConnection), Object(stdClass))
+#1 /Users/halo/work/workerman/vendor/workerman/workerman/Connection/TcpConnection.php(681): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"endTime":"154...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #51)
+#3 /Users/halo/work/workerman/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#8 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#9 /Users/halo/work/workerman/vendor/topthink/think-worker/src/Server.php(48): Workerman\Worker::runAll()
+#10 [internal function]: think\worker\Server->__construct()
+#11 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#12 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#13 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('worker', 'controller', false, 'Error')
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#15 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#16 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#17 /Users/halo/work/workerman/server.php(8): require('/Users/halo/wor...')
+#18 {main}
+2018-11-30 22:07:22 pid:4612 Worker[4612] process terminated
+2018-11-30 22:07:22 pid:4611 worker[none:4612] exit with status 64000
+2018-11-30 22:08:17 pid:4611 Workerman[server.php] stopping ...
+2018-11-30 22:08:17 pid:4611 Workerman[server.php] has been stopped
+2018-11-30 22:08:17 pid:4619 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:08:31 pid:4619 Workerman[server.php] stopping ...
+2018-11-30 22:08:31 pid:4619 Workerman[server.php] has been stopped
+2018-11-30 22:08:31 pid:4621 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:08:55 pid:4621 Workerman[server.php] stopping ...
+2018-11-30 22:08:55 pid:4621 Workerman[server.php] has been stopped
+2018-11-30 22:08:55 pid:4626 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:09:01 pid:4613 Workerman[http.php] stopping ...
+2018-11-30 22:09:01 pid:4613 Workerman[http.php] has been stopped
+2018-11-30 22:09:01 pid:4628 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:09:08 pid:4628 Workerman[http.php] stopping ...
+2018-11-30 22:09:08 pid:4628 Workerman[http.php] has been stopped
+2018-11-30 22:09:08 pid:4626 Workerman[server.php] stopping ...
+2018-11-30 22:09:08 pid:4626 Workerman[server.php] has been stopped
+2018-11-30 22:09:17 pid:4632 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:09:19 pid:4634 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:14:29 pid:4634 Workerman[http.php] stopping ...
+2018-11-30 22:14:29 pid:4634 Workerman[http.php] has been stopped
+2018-11-30 22:14:30 pid:4632 Workerman[server.php] stopping ...
+2018-11-30 22:14:30 pid:4632 Workerman[server.php] has been stopped
+2018-11-30 22:14:31 pid:4695 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:14:33 pid:4697 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:14:36 pid:4696 Error: Call to a member function send() on null in /Users/halo/work/workerman/application/index/controller/Http.php:71
+Stack trace:
+#0 /Users/halo/work/workerman/application/index/controller/Http.php(55): app\index\controller\Http->sayHello(Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /Users/halo/work/workerman/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#4 /Users/halo/work/workerman/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#6 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/halo/work/workerman/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#10 /Users/halo/work/workerman/application/index/controller/Http.php(63): Workerman\Worker::runAll()
+#11 [internal function]: app\index\controller\Http->__construct()
+#12 /Users/halo/work/workerman/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#13 /Users/halo/work/workerman/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#14 /Users/halo/work/workerman/thinkphp/library/think/App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#15 /Users/halo/work/workerman/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#16 /Users/halo/work/workerman/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#17 /Users/halo/work/workerman/thinkphp/start.php(19): think\App::run()
+#18 /Users/halo/work/workerman/http.php(8): require('/Users/halo/wor...')
+#19 {main}
+2018-11-30 22:14:36 pid:4696 Worker[4696] process terminated
+2018-11-30 22:14:36 pid:4695 worker[publisher:4696] exit with status 64000
+2018-11-30 22:14:36 pid:4698 Worker[4698] process terminated
+2018-11-30 22:14:59 pid:4697 Workerman[server.php] stopping ...
+2018-11-30 22:14:59 pid:4697 Workerman[server.php] has been stopped
+2018-11-30 22:14:59 pid:4713 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:15:01 pid:4695 Workerman[http.php] stopping ...
+2018-11-30 22:15:01 pid:4695 Workerman[http.php] has been stopped
+2018-11-30 22:15:01 pid:4715 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:15:03 pid:4714 Worker[4714] process terminated
+2018-11-30 22:15:26 pid:4713 Workerman[server.php] stopping ...
+2018-11-30 22:15:26 pid:4713 Workerman[server.php] has been stopped
+2018-11-30 22:15:26 pid:4726 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:15:33 pid:4715 Workerman[http.php] stopping ...
+2018-11-30 22:15:33 pid:4715 Workerman[http.php] has been stopped
+2018-11-30 22:15:34 pid:4728 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:15:35 pid:4727 Worker[4727] process terminated
+2018-11-30 22:15:57 pid:4726 Workerman[server.php] stopping ...
+2018-11-30 22:15:57 pid:4726 Workerman[server.php] has been stopped
+2018-11-30 22:15:57 pid:4739 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:16:02 pid:4728 Workerman[http.php] stopping ...
+2018-11-30 22:16:02 pid:4728 Workerman[http.php] has been stopped
+2018-11-30 22:16:02 pid:4741 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:17:46 pid:4739 Workerman[server.php] stopping ...
+2018-11-30 22:17:46 pid:4739 Workerman[server.php] has been stopped
+2018-11-30 22:17:47 pid:4779 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:17:48 pid:4741 Workerman[http.php] stopping ...
+2018-11-30 22:17:48 pid:4741 Workerman[http.php] has been stopped
+2018-11-30 22:17:49 pid:4781 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:18:05 pid:4779 Workerman[server.php] stopping ...
+2018-11-30 22:18:05 pid:4779 Workerman[server.php] has been stopped
+2018-11-30 22:18:05 pid:4785 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:18:09 pid:4781 Workerman[http.php] stopping ...
+2018-11-30 22:18:09 pid:4781 Workerman[http.php] has been stopped
+2018-11-30 22:18:09 pid:4787 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:18:39 pid:4785 Workerman[server.php] stopping ...
+2018-11-30 22:18:39 pid:4785 Workerman[server.php] has been stopped
+2018-11-30 22:18:39 pid:4794 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:18:40 pid:4787 Workerman[http.php] stopping ...
+2018-11-30 22:18:40 pid:4787 Workerman[http.php] has been stopped
+2018-11-30 22:18:41 pid:4796 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:18:58 pid:4794 Workerman[server.php] stopping ...
+2018-11-30 22:18:58 pid:4794 Workerman[server.php] has been stopped
+2018-11-30 22:18:59 pid:4803 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:19:00 pid:4796 Workerman[http.php] stopping ...
+2018-11-30 22:19:00 pid:4796 Workerman[http.php] has been stopped
+2018-11-30 22:19:00 pid:4805 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:25:34 pid:4803 Workerman[server.php] stopping ...
+2018-11-30 22:25:34 pid:4803 Workerman[server.php] has been stopped
+2018-11-30 22:25:35 pid:4874 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:25:36 pid:4805 Workerman[http.php] stopping ...
+2018-11-30 22:25:36 pid:4805 Workerman[http.php] has been stopped
+2018-11-30 22:25:36 pid:4876 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:25:38 pid:4875 Worker[4875] process terminated
+2018-11-30 22:26:33 pid:4874 Workerman[server.php] stopping ...
+2018-11-30 22:26:33 pid:4874 Workerman[server.php] has been stopped
+2018-11-30 22:26:33 pid:4898 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:26:34 pid:4876 Workerman[http.php] stopping ...
+2018-11-30 22:26:34 pid:4876 Workerman[http.php] has been stopped
+2018-11-30 22:26:35 pid:4900 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:27:31 pid:4898 Workerman[server.php] stopping ...
+2018-11-30 22:27:31 pid:4898 Workerman[server.php] has been stopped
+2018-11-30 22:27:32 pid:4911 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:27:33 pid:4900 Workerman[http.php] stopping ...
+2018-11-30 22:27:33 pid:4900 Workerman[http.php] has been stopped
+2018-11-30 22:27:34 pid:4913 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:28:15 pid:4913 Workerman[http.php] stopping ...
+2018-11-30 22:28:15 pid:4913 Workerman[http.php] has been stopped
+2018-11-30 22:28:16 pid:4911 Workerman[server.php] stopping ...
+2018-11-30 22:28:16 pid:4911 Workerman[server.php] has been stopped
+2018-11-30 22:28:26 pid:4921 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:28:28 pid:4923 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:28:53 pid:4921 Workerman[server.php] stopping ...
+2018-11-30 22:28:53 pid:4921 Workerman[server.php] has been stopped
+2018-11-30 22:28:55 pid:4928 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:28:56 pid:4923 Workerman[http.php] stopping ...
+2018-11-30 22:28:56 pid:4923 Workerman[http.php] has been stopped
+2018-11-30 22:28:56 pid:4930 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:29:00 pid:4929 Worker[4929] process terminated
+2018-11-30 22:29:13 pid:4930 Workerman[http.php] stopping ...
+2018-11-30 22:29:13 pid:4930 Workerman[http.php] has been stopped
+2018-11-30 22:29:13 pid:4928 Workerman[server.php] stopping ...
+2018-11-30 22:29:13 pid:4928 Workerman[server.php] has been stopped
+2018-11-30 22:29:14 pid:4940 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:29:16 pid:4942 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:29:17 pid:4941 Worker[4941] process terminated
+2018-11-30 22:29:35 pid:4940 Workerman[server.php] stopping ...
+2018-11-30 22:29:35 pid:4940 Workerman[server.php] has been stopped
+2018-11-30 22:29:36 pid:4952 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:29:37 pid:4942 Workerman[http.php] stopping ...
+2018-11-30 22:29:37 pid:4942 Workerman[http.php] has been stopped
+2018-11-30 22:29:37 pid:4954 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:30:21 pid:4952 Workerman[server.php] stopping ...
+2018-11-30 22:30:21 pid:4952 Workerman[server.php] has been stopped
+2018-11-30 22:30:23 pid:4965 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:30:24 pid:4954 Workerman[http.php] stopping ...
+2018-11-30 22:30:24 pid:4954 Workerman[http.php] has been stopped
+2018-11-30 22:30:25 pid:4969 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:31:41 pid:4965 Workerman[server.php] stopping ...
+2018-11-30 22:31:41 pid:4965 Workerman[server.php] has been stopped
+2018-11-30 22:31:43 pid:4987 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:31:44 pid:4969 Workerman[http.php] stopping ...
+2018-11-30 22:31:44 pid:4969 Workerman[http.php] has been stopped
+2018-11-30 22:31:44 pid:4989 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:32:14 pid:4987 Workerman[server.php] stopping ...
+2018-11-30 22:32:14 pid:4987 Workerman[server.php] has been stopped
+2018-11-30 22:32:15 pid:4992 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:32:16 pid:4989 Workerman[http.php] stopping ...
+2018-11-30 22:32:16 pid:4989 Workerman[http.php] has been stopped
+2018-11-30 22:32:17 pid:4994 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:32:50 pid:4994 Workerman[http.php] stopping ...
+2018-11-30 22:32:50 pid:4994 Workerman[http.php] has been stopped
+2018-11-30 22:32:51 pid:4992 Workerman[server.php] stopping ...
+2018-11-30 22:32:51 pid:4992 Workerman[server.php] has been stopped
+2018-11-30 22:32:58 pid:5005 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:33:01 pid:5007 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:33:14 pid:5005 Workerman[server.php] stopping ...
+2018-11-30 22:33:14 pid:5005 Workerman[server.php] has been stopped
+2018-11-30 22:33:15 pid:5010 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:33:16 pid:5007 Workerman[http.php] stopping ...
+2018-11-30 22:33:16 pid:5007 Workerman[http.php] has been stopped
+2018-11-30 22:33:17 pid:5012 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:33:57 pid:5012 Workerman[http.php] stopping ...
+2018-11-30 22:33:57 pid:5012 Workerman[http.php] has been stopped
+2018-11-30 22:34:00 pid:5010 Workerman[server.php] stopping ...
+2018-11-30 22:34:00 pid:5010 Workerman[server.php] has been stopped
+2018-11-30 22:34:03 pid:5021 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:34:06 pid:5023 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:35:08 pid:5021 Workerman[server.php] stopping ...
+2018-11-30 22:35:08 pid:5021 Workerman[server.php] has been stopped
+2018-11-30 22:35:09 pid:5030 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:35:11 pid:5023 Workerman[http.php] stopping ...
+2018-11-30 22:35:11 pid:5023 Workerman[http.php] has been stopped
+2018-11-30 22:35:11 pid:5032 Workerman[http.php] start in DEBUG mode
+2018-11-30 22:36:19 pid:5030 Workerman[server.php] stopping ...
+2018-11-30 22:36:19 pid:5030 Workerman[server.php] has been stopped
+2018-11-30 22:36:23 pid:5032 Workerman[http.php] stopping ...
+2018-11-30 22:36:23 pid:5032 Workerman[http.php] has been stopped
+2018-11-30 22:36:26 pid:5042 Workerman[server.php] start in DEBUG mode
+2018-11-30 22:36:29 pid:5044 Workerman[http.php] start in DEBUG mode
+2018-12-01 10:38:48 pid:1 think\exception\ErrorException: call_user_func() expects parameter 1 to be a valid callback, class 'app\index\controller\Http' does not have a method 'sayHello2' in E:\tp\application\index\controller\Http.php:55
+Stack trace:
+#0 E:\tp\application\index\controller\Http.php(55): think\Error::appError(2, 'call_user_func(...', 'E:\\tp\\applicati...', 55, Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 E:\tp\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #51)
+#4 E:\tp\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#5 E:\tp\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#6 E:\tp\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#7 E:\tp\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#8 E:\tp\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#9 E:\tp\application\index\controller\Http.php(63): Workerman\Worker::runAll()
+#10 [internal function]: app\index\controller\Http->__construct()
+#11 E:\tp\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#12 E:\tp\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#13 E:\tp\thinkphp\library\think\App.php(575): think\Loader::controller('http', 'controller', false, 'Error')
+#14 E:\tp\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#15 E:\tp\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#16 E:\tp\thinkphp\start.php(19): think\App::run()
+#17 E:\tp\http.php(8): require('E:\\tp\\thinkphp\\...')
+#18 {main}
+2018-12-01 10:38:48 pid:1 Worker process terminated
+2018-12-01 10:39:27 pid:1 Worker process terminated
+2018-12-01 10:40:09 pid:1 Worker process terminated
+2018-12-01 10:41:26 pid:1 Worker process terminated
+2018-12-01 10:42:53 pid:1 Worker process terminated
+2018-12-01 10:43:31 pid:1 Worker process terminated
+2018-12-01 10:45:44 pid:1 Worker process terminated
+2018-12-01 10:46:35 pid:1 Worker process terminated
+2018-12-01 11:23:37 pid:12164 Workerman[server.php] start in DEBUG mode
+2018-12-01 15:16:16 pid:52 Workerman[server.php] start in DEBUG mode
+2018-12-01 15:16:48 pid:170 Workerman[http.php] start in DEBUG mode
+2018-12-01 15:17:08 pid:52 Workerman[server.php] stopping ...
+2018-12-01 15:17:08 pid:52 Workerman[server.php] has been stopped
+2018-12-01 15:17:19 pid:170 Workerman[http.php] stopping ...
+2018-12-01 15:17:19 pid:170 Workerman[http.php] has been stopped
+2018-12-01 15:18:47 pid:49 Workerman[server.php] start in DEBUG mode
+2018-12-01 15:19:07 pid:169 Workerman[http.php] start in DEBUG mode
+2018-12-01 15:20:18 pid:49 Workerman[server.php] stopping ...
+2018-12-01 15:20:18 pid:49 Workerman[server.php] has been stopped
+2018-12-01 15:20:23 pid:169 Workerman[http.php] stopping ...
+2018-12-01 15:20:23 pid:169 Workerman[http.php] has been stopped
+2018-12-01 15:20:34 pid:172 Workerman[server.php] start in DEBUG mode
+2018-12-01 15:20:47 pid:274 Workerman[http.php] start in DEBUG mode
+2018-12-01 15:23:48 pid:274 Workerman[http.php] stopping ...
+2018-12-01 15:23:48 pid:274 Workerman[http.php] has been stopped
+2018-12-01 15:23:52 pid:277 Workerman[http.php] start in DEBUG mode
+2018-12-01 15:23:55 pid:279 exception 'think\exception\ErrorException' with message 'Undefined variable: connectionr' in /var/www/application/index/controller/Http.php:51
+Stack trace:
+#0 /var/www/application/index/controller/Http.php(51): think\Error::appError(8, 'Undefined varia...', '/var/www/applic...', 51, Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\AsyncTcpConnection))
+#2 /var/www/vendor/workerman/workerman/Connection/AsyncTcpConnection.php(337): call_user_func(Object(Closure), Object(Workerman\Connection\AsyncTcpConnection))
+#3 [internal function]: Workerman\Connection\AsyncTcpConnection->checkConnection(Resource id #64, 4, NULL)
+#4 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #48)
+#5 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#6 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#10 /var/www/application/index/controller/Http.php(36): Workerman\Worker::runAll()
+#11 [internal function]: app\index\controller\Http->__construct()
+#12 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#14 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#15 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#16 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#17 /var/www/thinkphp/start.php(19): think\App::run()
+#18 /var/www/http.php(8): require('/var/www/thinkp...')
+#19 {main}
+2018-12-01 15:23:55 pid:279 Worker[279] process terminated
+2018-12-01 15:23:55 pid:277 worker[publisher:279] exit with status 64000
+2018-12-01 15:24:09 pid:277 Workerman[http.php] stopping ...
+2018-12-01 15:24:09 pid:277 Workerman[http.php] has been stopped
+2018-12-01 15:24:10 pid:281 Workerman[http.php] start in DEBUG mode
+2018-12-01 15:24:11 pid:283 exception 'think\exception\ErrorException' with message 'Undefined variable: msg' in /var/www/application/index/controller/Http.php:51
+Stack trace:
+#0 /var/www/application/index/controller/Http.php(51): think\Error::appError(8, 'Undefined varia...', '/var/www/applic...', 51, Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\AsyncTcpConnection))
+#2 /var/www/vendor/workerman/workerman/Connection/AsyncTcpConnection.php(337): call_user_func(Object(Closure), Object(Workerman\Connection\AsyncTcpConnection))
+#3 [internal function]: Workerman\Connection\AsyncTcpConnection->checkConnection(Resource id #64, 4, NULL)
+#4 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #48)
+#5 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#6 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#10 /var/www/application/index/controller/Http.php(36): Workerman\Worker::runAll()
+#11 [internal function]: app\index\controller\Http->__construct()
+#12 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#14 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#15 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#16 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#17 /var/www/thinkphp/start.php(19): think\App::run()
+#18 /var/www/http.php(8): require('/var/www/thinkp...')
+#19 {main}
+2018-12-01 15:24:11 pid:283 Worker[283] process terminated
+2018-12-01 15:24:11 pid:281 worker[publisher:283] exit with status 64000
+2018-12-01 15:24:24 pid:281 Workerman[http.php] stopping ...
+2018-12-01 15:24:24 pid:281 Workerman[http.php] has been stopped
+2018-12-01 15:24:25 pid:285 Workerman[http.php] start in DEBUG mode
+2018-12-01 15:29:24 pid:285 Workerman[http.php] stopping ...
+2018-12-01 15:29:24 pid:285 Workerman[http.php] has been stopped
+2018-12-01 15:29:26 pid:172 Workerman[server.php] stopping ...
+2018-12-01 15:29:26 pid:172 Workerman[server.php] has been stopped
+2018-12-01 15:29:26 pid:288 Workerman[server.php] start in DEBUG mode
+2018-12-01 15:29:30 pid:390 Workerman[http.php] start in DEBUG mode
+2018-12-01 15:40:19 pid:392 exception 'think\exception\ErrorException' with message 'call_user_func() expects parameter 1 to be a valid callback, class 'app\index\controller\Http' does not have a method '666'' in /var/www/application/index/controller/Http.php:26
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'call_user_func(...', '/var/www/applic...', 26, Array)
+#1 /var/www/application/index/controller/Http.php(26): call_user_func(Array, Array)
+#2 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #654, 2, NULL)
+#5 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #48)
+#6 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#8 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#10 /var/www/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#11 /var/www/application/index/controller/Http.php(34): Workerman\Worker::runAll()
+#12 [internal function]: app\index\controller\Http->__construct()
+#13 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#14 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#15 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#16 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#17 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#18 /var/www/thinkphp/start.php(19): think\App::run()
+#19 /var/www/http.php(8): require('/var/www/thinkp...')
+#20 {main}
+2018-12-01 15:40:19 pid:392 Worker[392] process terminated
+2018-12-01 15:40:19 pid:390 worker[publisher:392] exit with status 64000
+2018-12-01 15:40:19 pid:415 exception 'think\exception\ErrorException' with message 'call_user_func() expects parameter 1 to be a valid callback, class 'app\index\controller\Http' does not have a method '666'' in /var/www/application/index/controller/Http.php:26
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'call_user_func(...', '/var/www/applic...', 26, Array)
+#1 /var/www/application/index/controller/Http.php(26): call_user_func(Array, Array)
+#2 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #57, 2, NULL)
+#5 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #49)
+#6 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#8 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#11 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#12 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#13 /var/www/application/index/controller/Http.php(34): Workerman\Worker::runAll()
+#14 [internal function]: app\index\controller\Http->__construct()
+#15 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#16 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#17 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#18 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#19 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#20 /var/www/thinkphp/start.php(19): think\App::run()
+#21 /var/www/http.php(8): require('/var/www/thinkp...')
+#22 {main}
+2018-12-01 15:40:19 pid:415 Worker[415] process terminated
+2018-12-01 15:40:19 pid:390 worker[publisher:415] exit with status 64000
+2018-12-01 15:40:19 pid:416 exception 'think\exception\ErrorException' with message 'call_user_func() expects parameter 1 to be a valid callback, class 'app\index\controller\Http' does not have a method '666'' in /var/www/application/index/controller/Http.php:26
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'call_user_func(...', '/var/www/applic...', 26, Array)
+#1 /var/www/application/index/controller/Http.php(26): call_user_func(Array, Array)
+#2 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #58, 2, NULL)
+#5 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #50)
+#6 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#8 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#11 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#12 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#13 /var/www/application/index/controller/Http.php(34): Workerman\Worker::runAll()
+#14 [internal function]: app\index\controller\Http->__construct()
+#15 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#16 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#17 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#18 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#19 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#20 /var/www/thinkphp/start.php(19): think\App::run()
+#21 /var/www/http.php(8): require('/var/www/thinkp...')
+#22 {main}
+2018-12-01 15:40:19 pid:416 Worker[416] process terminated
+2018-12-01 15:40:19 pid:390 worker[publisher:416] exit with status 64000
+2018-12-01 15:40:19 pid:417 exception 'think\exception\ErrorException' with message 'call_user_func() expects parameter 1 to be a valid callback, class 'app\index\controller\Http' does not have a method '666'' in /var/www/application/index/controller/Http.php:26
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'call_user_func(...', '/var/www/applic...', 26, Array)
+#1 /var/www/application/index/controller/Http.php(26): call_user_func(Array, Array)
+#2 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #59, 2, NULL)
+#5 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #51)
+#6 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#8 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#11 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#12 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#13 /var/www/application/index/controller/Http.php(34): Workerman\Worker::runAll()
+#14 [internal function]: app\index\controller\Http->__construct()
+#15 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#16 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#17 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#18 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#19 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#20 /var/www/thinkphp/start.php(19): think\App::run()
+#21 /var/www/http.php(8): require('/var/www/thinkp...')
+#22 {main}
+2018-12-01 15:40:19 pid:417 Worker[417] process terminated
+2018-12-01 15:40:19 pid:390 worker[publisher:417] exit with status 64000
+2018-12-01 15:40:24 pid:418 exception 'think\exception\ErrorException' with message 'call_user_func() expects parameter 1 to be a valid callback, class 'app\index\controller\Http' does not have a method '666'' in /var/www/application/index/controller/Http.php:26
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'call_user_func(...', '/var/www/applic...', 26, Array)
+#1 /var/www/application/index/controller/Http.php(26): call_user_func(Array, Array)
+#2 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #60, 2, NULL)
+#5 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #52)
+#6 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#8 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#11 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#12 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#13 /var/www/application/index/controller/Http.php(34): Workerman\Worker::runAll()
+#14 [internal function]: app\index\controller\Http->__construct()
+#15 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#16 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#17 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#18 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#19 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#20 /var/www/thinkphp/start.php(19): think\App::run()
+#21 /var/www/http.php(8): require('/var/www/thinkp...')
+#22 {main}
+2018-12-01 15:40:24 pid:418 Worker[418] process terminated
+2018-12-01 15:40:24 pid:390 worker[publisher:418] exit with status 64000
+2018-12-01 15:40:30 pid:419 exception 'think\exception\ErrorException' with message 'call_user_func() expects parameter 1 to be a valid callback, class 'app\index\controller\Http' does not have a method '666'' in /var/www/application/index/controller/Http.php:26
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'call_user_func(...', '/var/www/applic...', 26, Array)
+#1 /var/www/application/index/controller/Http.php(26): call_user_func(Array, Array)
+#2 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #61, 2, NULL)
+#5 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #53)
+#6 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#8 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#11 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#12 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#13 /var/www/application/index/controller/Http.php(34): Workerman\Worker::runAll()
+#14 [internal function]: app\index\controller\Http->__construct()
+#15 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#16 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#17 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#18 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#19 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#20 /var/www/thinkphp/start.php(19): think\App::run()
+#21 /var/www/http.php(8): require('/var/www/thinkp...')
+#22 {main}
+2018-12-01 15:40:30 pid:419 Worker[419] process terminated
+2018-12-01 15:40:30 pid:390 worker[publisher:419] exit with status 64000
+2018-12-01 15:44:34 pid:420 exception 'think\exception\ErrorException' with message 'stream_socket_client(): unable to connect to tcp://127.0.0.1:55555 (Cannot assign requested address)' in /var/www/vendor/workerman/workerman/Connection/AsyncTcpConnection.php:185
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'stream_socket_c...', '/var/www/vendor...', 185, Array)
+#1 /var/www/vendor/workerman/workerman/Connection/AsyncTcpConnection.php(185): stream_socket_client('tcp://127.0.0.1...', 99, 'Cannot assign r...', 0, 2)
+#2 /var/www/application/index/controller/Http.php(65): Workerman\Connection\AsyncTcpConnection->connect()
+#3 [internal function]: app\index\controller\Http->sayHello(Array)
+#4 /var/www/application/index/controller/Http.php(26): call_user_func(Array, Array)
+#5 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#6 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #132, 2, NULL)
+#8 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #54)
+#9 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /var/www/application/index/controller/Http.php(34): Workerman\Worker::runAll()
+#17 [internal function]: app\index\controller\Http->__construct()
+#18 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#19 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#20 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#21 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#22 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#23 /var/www/thinkphp/start.php(19): think\App::run()
+#24 /var/www/http.php(8): require('/var/www/thinkp...')
+#25 {main}
+2018-12-01 15:44:34 pid:420 Worker[420] process terminated
+2018-12-01 15:44:35 pid:390 worker[publisher:420] exit with status 64000
+2018-12-01 15:47:21 pid:288 Workerman[server.php] stopping ...
+2018-12-01 15:47:21 pid:288 Workerman[server.php] has been stopped
+2018-12-01 15:47:24 pid:390 Workerman[http.php] stopping ...
+2018-12-01 15:47:24 pid:390 Workerman[http.php] has been stopped
+2018-12-01 15:47:31 pid:422 Workerman[server.php] start in DEBUG mode
+2018-12-01 15:47:39 pid:436 Workerman[http.php] start in DEBUG mode
+2018-12-01 16:00:29 pid:422 Workerman[server.php] stopping ...
+2018-12-01 16:00:30 pid:422 Workerman[server.php] has been stopped
+2018-12-01 16:00:32 pid:439 Workerman[server.php] start in DEBUG mode
+2018-12-01 16:00:35 pid:436 Workerman[http.php] stopping ...
+2018-12-01 16:00:35 pid:436 Workerman[http.php] has been stopped
+2018-12-01 16:00:36 pid:541 Workerman[http.php] start in DEBUG mode
+2018-12-01 16:53:25 pid:541 Workerman[http.php] stopping ...
+2018-12-01 16:53:25 pid:541 Workerman[http.php] has been stopped
+2018-12-01 16:53:27 pid:439 Workerman[server.php] stopping ...
+2018-12-01 16:53:28 pid:439 Workerman[server.php] has been stopped
+2018-12-01 16:53:30 pid:594 Workerman[server.php] start in DEBUG mode
+2018-12-01 16:53:36 pid:697 Workerman[http.php] start in DEBUG mode
+2018-12-01 16:54:34 pid:697 Workerman[http.php] stopping ...
+2018-12-01 16:54:34 pid:697 Workerman[http.php] has been stopped
+2018-12-01 16:54:36 pid:700 Workerman[http.php] start in DEBUG mode
+2018-12-01 16:54:53 pid:702 exception 'think\exception\ErrorException' with message 'Undefined index: func' in /var/www/application/index/controller/Http.php:27
+Stack trace:
+#0 /var/www/application/index/controller/Http.php(27): think\Error::appError(8, 'Undefined index...', '/var/www/applic...', 27, Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #62, 2, NULL)
+#4 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #48)
+#5 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#6 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#10 /var/www/application/index/controller/Http.php(35): Workerman\Worker::runAll()
+#11 [internal function]: app\index\controller\Http->__construct()
+#12 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#14 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#15 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#16 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#17 /var/www/thinkphp/start.php(19): think\App::run()
+#18 /var/www/http.php(8): require('/var/www/thinkp...')
+#19 {main}
+2018-12-01 16:54:53 pid:702 Worker[702] process terminated
+2018-12-01 16:54:53 pid:700 worker[publisher:702] exit with status 64000
+2018-12-01 16:54:54 pid:703 exception 'think\exception\ErrorException' with message 'Undefined index: func' in /var/www/application/index/controller/Http.php:27
+Stack trace:
+#0 /var/www/application/index/controller/Http.php(27): think\Error::appError(8, 'Undefined index...', '/var/www/applic...', 27, Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #57, 2, NULL)
+#4 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #49)
+#5 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#6 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#12 /var/www/application/index/controller/Http.php(35): Workerman\Worker::runAll()
+#13 [internal function]: app\index\controller\Http->__construct()
+#14 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#16 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#17 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#18 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#19 /var/www/thinkphp/start.php(19): think\App::run()
+#20 /var/www/http.php(8): require('/var/www/thinkp...')
+#21 {main}
+2018-12-01 16:54:54 pid:703 Worker[703] process terminated
+2018-12-01 16:54:54 pid:700 worker[publisher:703] exit with status 64000
+2018-12-01 16:54:54 pid:704 exception 'think\exception\ErrorException' with message 'Undefined index: func' in /var/www/application/index/controller/Http.php:27
+Stack trace:
+#0 /var/www/application/index/controller/Http.php(27): think\Error::appError(8, 'Undefined index...', '/var/www/applic...', 27, Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #58, 2, NULL)
+#4 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #50)
+#5 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#6 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#12 /var/www/application/index/controller/Http.php(35): Workerman\Worker::runAll()
+#13 [internal function]: app\index\controller\Http->__construct()
+#14 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#16 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#17 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#18 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#19 /var/www/thinkphp/start.php(19): think\App::run()
+#20 /var/www/http.php(8): require('/var/www/thinkp...')
+#21 {main}
+2018-12-01 16:54:54 pid:704 Worker[704] process terminated
+2018-12-01 16:54:54 pid:700 worker[publisher:704] exit with status 64000
+2018-12-01 16:54:59 pid:705 exception 'think\exception\ErrorException' with message 'Undefined index: func' in /var/www/application/index/controller/Http.php:27
+Stack trace:
+#0 /var/www/application/index/controller/Http.php(27): think\Error::appError(8, 'Undefined index...', '/var/www/applic...', 27, Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #59, 2, NULL)
+#4 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #51)
+#5 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#6 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#12 /var/www/application/index/controller/Http.php(35): Workerman\Worker::runAll()
+#13 [internal function]: app\index\controller\Http->__construct()
+#14 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#16 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#17 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#18 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#19 /var/www/thinkphp/start.php(19): think\App::run()
+#20 /var/www/http.php(8): require('/var/www/thinkp...')
+#21 {main}
+2018-12-01 16:54:59 pid:705 Worker[705] process terminated
+2018-12-01 16:54:59 pid:700 worker[publisher:705] exit with status 64000
+2018-12-01 16:54:59 pid:706 exception 'think\exception\ErrorException' with message 'Undefined index: func' in /var/www/application/index/controller/Http.php:27
+Stack trace:
+#0 /var/www/application/index/controller/Http.php(27): think\Error::appError(8, 'Undefined index...', '/var/www/applic...', 27, Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #60, 2, NULL)
+#4 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #52)
+#5 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#6 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#12 /var/www/application/index/controller/Http.php(35): Workerman\Worker::runAll()
+#13 [internal function]: app\index\controller\Http->__construct()
+#14 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#16 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#17 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#18 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#19 /var/www/thinkphp/start.php(19): think\App::run()
+#20 /var/www/http.php(8): require('/var/www/thinkp...')
+#21 {main}
+2018-12-01 16:54:59 pid:706 Worker[706] process terminated
+2018-12-01 16:54:59 pid:700 worker[publisher:706] exit with status 64000
+2018-12-01 16:55:29 pid:707 exception 'think\exception\ErrorException' with message 'Undefined index: func' in /var/www/application/index/controller/Http.php:27
+Stack trace:
+#0 /var/www/application/index/controller/Http.php(27): think\Error::appError(8, 'Undefined index...', '/var/www/applic...', 27, Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #65, 2, NULL)
+#4 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #53)
+#5 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#6 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#12 /var/www/application/index/controller/Http.php(35): Workerman\Worker::runAll()
+#13 [internal function]: app\index\controller\Http->__construct()
+#14 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#16 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#17 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#18 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#19 /var/www/thinkphp/start.php(19): think\App::run()
+#20 /var/www/http.php(8): require('/var/www/thinkp...')
+#21 {main}
+2018-12-01 16:55:29 pid:707 Worker[707] process terminated
+2018-12-01 16:55:29 pid:700 worker[publisher:707] exit with status 64000
+2018-12-01 16:55:29 pid:708 exception 'think\exception\ErrorException' with message 'Undefined index: func' in /var/www/application/index/controller/Http.php:27
+Stack trace:
+#0 /var/www/application/index/controller/Http.php(27): think\Error::appError(8, 'Undefined index...', '/var/www/applic...', 27, Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #62, 2, NULL)
+#4 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #54)
+#5 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#6 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#12 /var/www/application/index/controller/Http.php(35): Workerman\Worker::runAll()
+#13 [internal function]: app\index\controller\Http->__construct()
+#14 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#16 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#17 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#18 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#19 /var/www/thinkphp/start.php(19): think\App::run()
+#20 /var/www/http.php(8): require('/var/www/thinkp...')
+#21 {main}
+2018-12-01 16:55:29 pid:708 Worker[708] process terminated
+2018-12-01 16:55:29 pid:700 worker[publisher:708] exit with status 64000
+2018-12-01 16:56:29 pid:709 exception 'think\exception\ErrorException' with message 'Undefined index: func' in /var/www/application/index/controller/Http.php:27
+Stack trace:
+#0 /var/www/application/index/controller/Http.php(27): think\Error::appError(8, 'Undefined index...', '/var/www/applic...', 27, Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #67, 2, NULL)
+#4 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #55)
+#5 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#6 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#12 /var/www/application/index/controller/Http.php(35): Workerman\Worker::runAll()
+#13 [internal function]: app\index\controller\Http->__construct()
+#14 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#16 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#17 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#18 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#19 /var/www/thinkphp/start.php(19): think\App::run()
+#20 /var/www/http.php(8): require('/var/www/thinkp...')
+#21 {main}
+2018-12-01 16:56:29 pid:709 Worker[709] process terminated
+2018-12-01 16:56:29 pid:700 worker[publisher:709] exit with status 64000
+2018-12-01 16:56:29 pid:710 exception 'think\exception\ErrorException' with message 'Undefined index: func' in /var/www/application/index/controller/Http.php:27
+Stack trace:
+#0 /var/www/application/index/controller/Http.php(27): think\Error::appError(8, 'Undefined index...', '/var/www/applic...', 27, Array)
+#1 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#2 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #64, 2, NULL)
+#4 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #56)
+#5 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#6 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#11 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#12 /var/www/application/index/controller/Http.php(35): Workerman\Worker::runAll()
+#13 [internal function]: app\index\controller\Http->__construct()
+#14 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#16 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#17 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#18 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#19 /var/www/thinkphp/start.php(19): think\App::run()
+#20 /var/www/http.php(8): require('/var/www/thinkp...')
+#21 {main}
+2018-12-01 16:56:29 pid:710 Worker[710] process terminated
+2018-12-01 16:56:29 pid:700 worker[publisher:710] exit with status 64000
+2018-12-01 16:56:36 pid:700 Workerman[http.php] stopping ...
+2018-12-01 16:56:36 pid:700 Workerman[http.php] has been stopped
+2018-12-01 16:56:37 pid:712 Workerman[http.php] start in DEBUG mode
+2018-12-01 16:56:39 pid:714 exception 'think\exception\ErrorException' with message 'call_user_func() expects parameter 1 to be a valid callback, class 'app\index\controller\Http' does not have a method 'sayHello'' in /var/www/application/index/controller/Http.php:27
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'call_user_func(...', '/var/www/applic...', 27, Array)
+#1 /var/www/application/index/controller/Http.php(27): call_user_func(Array, Array)
+#2 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #56, 2, NULL)
+#5 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #48)
+#6 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#8 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#10 /var/www/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#11 /var/www/application/index/controller/Http.php(35): Workerman\Worker::runAll()
+#12 [internal function]: app\index\controller\Http->__construct()
+#13 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#14 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#15 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#16 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#17 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#18 /var/www/thinkphp/start.php(19): think\App::run()
+#19 /var/www/http.php(8): require('/var/www/thinkp...')
+#20 {main}
+2018-12-01 16:56:39 pid:714 Worker[714] process terminated
+2018-12-01 16:56:39 pid:712 worker[publisher:714] exit with status 64000
+2018-12-01 16:56:39 pid:715 exception 'think\exception\ErrorException' with message 'call_user_func() expects parameter 1 to be a valid callback, class 'app\index\controller\Http' does not have a method 'sayHello'' in /var/www/application/index/controller/Http.php:27
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'call_user_func(...', '/var/www/applic...', 27, Array)
+#1 /var/www/application/index/controller/Http.php(27): call_user_func(Array, Array)
+#2 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #57, 2, NULL)
+#5 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #49)
+#6 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#8 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#11 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#12 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#13 /var/www/application/index/controller/Http.php(35): Workerman\Worker::runAll()
+#14 [internal function]: app\index\controller\Http->__construct()
+#15 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#16 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#17 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#18 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#19 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#20 /var/www/thinkphp/start.php(19): think\App::run()
+#21 /var/www/http.php(8): require('/var/www/thinkp...')
+#22 {main}
+2018-12-01 16:56:39 pid:715 Worker[715] process terminated
+2018-12-01 16:56:39 pid:712 worker[publisher:715] exit with status 64000
+2018-12-01 16:57:21 pid:712 Workerman[http.php] stopping ...
+2018-12-01 16:57:21 pid:712 Workerman[http.php] has been stopped
+2018-12-01 16:57:21 pid:717 Workerman[http.php] start in DEBUG mode
+2018-12-01 16:57:24 pid:719 exception 'think\exception\ErrorException' with message 'call_user_func() expects parameter 1 to be a valid callback, class 'app\index\controller\Http' does not have a method 'sayHello'' in /var/www/application/index/controller/Http.php:26
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'call_user_func(...', '/var/www/applic...', 26, Array)
+#1 /var/www/application/index/controller/Http.php(26): call_user_func(Array, Array)
+#2 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #56, 2, NULL)
+#5 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #48)
+#6 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#8 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#10 /var/www/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#11 /var/www/application/index/controller/Http.php(34): Workerman\Worker::runAll()
+#12 [internal function]: app\index\controller\Http->__construct()
+#13 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#14 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#15 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#16 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#17 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#18 /var/www/thinkphp/start.php(19): think\App::run()
+#19 /var/www/http.php(8): require('/var/www/thinkp...')
+#20 {main}
+2018-12-01 16:57:24 pid:719 Worker[719] process terminated
+2018-12-01 16:57:24 pid:717 worker[publisher:719] exit with status 64000
+2018-12-01 16:57:24 pid:720 exception 'think\exception\ErrorException' with message 'call_user_func() expects parameter 1 to be a valid callback, class 'app\index\controller\Http' does not have a method 'sayHello'' in /var/www/application/index/controller/Http.php:26
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'call_user_func(...', '/var/www/applic...', 26, Array)
+#1 /var/www/application/index/controller/Http.php(26): call_user_func(Array, Array)
+#2 [internal function]: app\index\controller\Http->app\index\controller\{closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /var/www/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #57, 2, NULL)
+#5 /var/www/vendor/workerman/workerman/Events/Libevent.php(202): event_base_loop(Resource id #49)
+#6 /var/www/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Libevent->loop()
+#7 /var/www/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#8 /var/www/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /var/www/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#10 /var/www/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#11 /var/www/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#12 /var/www/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#13 /var/www/application/index/controller/Http.php(34): Workerman\Worker::runAll()
+#14 [internal function]: app\index\controller\Http->__construct()
+#15 /var/www/thinkphp/library/think/App.php(359): ReflectionClass->newInstanceArgs(Array)
+#16 /var/www/thinkphp/library/think/Loader.php(479): think\App::invokeClass('app\\index\\contr...')
+#17 /var/www/thinkphp/library/think/App.php(576): think\Loader::controller('http', 'controller', false, 'Error')
+#18 /var/www/thinkphp/library/think/App.php(457): think\App::module(Array, Array, NULL)
+#19 /var/www/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#20 /var/www/thinkphp/start.php(19): think\App::run()
+#21 /var/www/http.php(8): require('/var/www/thinkp...')
+#22 {main}
+2018-12-01 16:57:24 pid:720 Worker[720] process terminated
+2018-12-01 16:57:24 pid:717 worker[publisher:720] exit with status 64000
+2018-12-01 16:58:09 pid:717 Workerman[http.php] stopping ...
+2018-12-01 16:58:09 pid:717 Workerman[http.php] has been stopped
+2018-12-01 16:58:10 pid:722 Workerman[http.php] start in DEBUG mode
+2018-12-01 17:00:56 pid:722 Workerman[http.php] stopping ...
+2018-12-01 17:11:47 pid:47 Workerman[channel.php] start in DEBUG mode
+2018-12-01 17:11:53 pid:47 Workerman[channel.php] stopping ...
+2018-12-01 17:11:53 pid:47 Workerman[channel.php] has been stopped
+2018-12-01 17:12:20 pid:50 Workerman[socketio.php] start in DEBUG mode

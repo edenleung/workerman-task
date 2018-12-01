@@ -1,0 +1,1 @@
+docker run -p 4327:4327 -p 2120:2120 -p 2206:2206 -v %cd%:/var/www lianyushengren/workerman
