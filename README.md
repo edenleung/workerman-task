@@ -15,4 +15,4 @@ $ php http.php
 ~~~
 
 ### 使用
-打开index.html,发布任务
+打开index.html,发布任务(注意IP问题)
