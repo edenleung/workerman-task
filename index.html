@@ -123,8 +123,9 @@
       submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
+            var time = Date.parse(new Date())
             for (var i = 0; i < this.task.num; i++) {
-              axios.get('http://0.0.0.0:4237?task=' + this.task.name + '&job_id=' + i)
+              axios.get('http://0.0.0.0:4237?task=' + this.task.name + '&job_id=' + i + '&time=' + time)
             }
           } else {
             console.log('error submit!!');
