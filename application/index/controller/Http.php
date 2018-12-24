@@ -13,7 +13,6 @@ class Http
 {
     public function __construct()
     {
-        header('Access-Control-Allow-Origin:*');
         $http_worker = new Worker('http://0.0.0.0:4237');
         $http_worker->name = 'publisher';
 
@@ -21,6 +20,7 @@ class Http
          * 收到客户新消息
          */
         $http_worker->onMessage = function ($connection, $data) {
+            \Workerman\Protocols\Http::header('Access-Control-Allow-Origin: *');
             $data = $data['get'];
             if (isset($data['task'])) {
                 call_user_func([$this, $data['task']], $data);
